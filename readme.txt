@@ -4,6 +4,7 @@
 ** Preparation
    $ read token ; echo "export TELEGRAM_BOT_TOKEN='$token'" >> ~/.bashrc
    $ read chat ; echo "export TELEGRAM_BOT_CHAT='$chat'" >> ~/.bashrc
+   $ source client.sh
 
 
 ** Example usage
