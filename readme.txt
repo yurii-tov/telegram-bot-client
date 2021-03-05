@@ -8,7 +8,7 @@
 
 
 ** Example usage
-   # Explicit, via $1
-   $ send-telegram-message 'hello'
-   # Implicit, from stdin
-   $ ls -lah | send-telegram-message
+*** Explicit, via $1
+    $ send-telegram-message 'hello'
+*** Implicit, from stdin
+    $ ls -lah | send-telegram-message
