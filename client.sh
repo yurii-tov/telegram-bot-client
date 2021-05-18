@@ -16,5 +16,5 @@ function send-telegram-message() {
 
 
 function tgm() {
-    send-telegram-message $*
+    send-telegram-message "$@"
 }
