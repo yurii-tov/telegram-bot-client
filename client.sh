@@ -13,3 +13,8 @@ function send-telegram-message() {
         return 1
     }
 }
+
+
+function tgm() {
+    send-telegram-message $*
+}
