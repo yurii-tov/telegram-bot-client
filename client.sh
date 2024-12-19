@@ -18,3 +18,7 @@ function send-telegram-message() {
 function tgm() {
     send-telegram-message "$@"
 }
+
+
+export -f send-telegram-message
+export -f tgm
