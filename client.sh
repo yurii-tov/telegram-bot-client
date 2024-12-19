@@ -7,7 +7,7 @@ function send-telegram-message() {
     [ $# -lt 1 ] && {
         local message="$(cat)"
     }
-    local result=$(curl -sd '{"chat_id": "'"$TELEGRAM_BOT_CHAT"'", "text": "<pre>'"$message"'</pre>", "parse_mode": "html"}' -H 'Content-Type: application/json' "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage")
+    local result=$(curl -sd '{"chat_id": "'"$TELEGRAM_BOT_CHAT"'", "text": "'"$message"'", "parse_mode": "html"}' -H 'Content-Type: application/json' "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage")
     echo "$result" | grep '"ok":true' >/dev/null || {
         echo "$result"
         return 1
