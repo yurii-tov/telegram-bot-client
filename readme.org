@@ -1,0 +1,18 @@
+* Sending telegram bot messages
+
+
+** Preparation
+   #+begin_src bash
+     read token ; echo "export TELEGRAM_BOT_TOKEN='$token'" >> ~/.bashrc
+     read chat ; echo "export TELEGRAM_BOT_CHAT='$chat'" >> ~/.bashrc
+     source client.sh
+   #+end_src
+
+
+** Example usage
+
+*** Explicit, via $1
+    =send-telegram-message 'hello'=
+
+*** Implicit, from stdin
+    =ls -lah | send-telegram-message=
