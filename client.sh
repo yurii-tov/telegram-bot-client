@@ -5,7 +5,7 @@
 function send-telegram-message() {
     local message="$1"
     [ $# -lt 1 ] && {
-        local message="<pre>$(cat | sed 's:":\\":g')</pre>"
+        local message="<pre>$(sed 's:":\\":g')</pre>"
     }
     [ "$TELEGRAM_BOT_PROXY" ] && {
         local proxy="-x $TELEGRAM_BOT_PROXY"
