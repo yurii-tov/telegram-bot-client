@@ -1,11 +1,12 @@
-* Sending telegram bot messages
+* Send messages through Telegram bot
 
 
-** Preparation
+** Example config in .bashrc
    #+begin_src bash
-     read token ; echo "export TELEGRAM_BOT_TOKEN='$token'" >> ~/.bashrc
-     read chat ; echo "export TELEGRAM_BOT_CHAT='$chat'" >> ~/.bashrc
-     source client.sh
+     export TELEGRAM_BOT_TOKEN='the-token'
+     export TELEGRAM_BOT_CHAT='the-chat-id'
+     export TELEGRAM_BOT_PROXY=socks5://localhost:9999 # Optional
+     source ~/telegram-bot-client/client.sh
    #+end_src
 
 
