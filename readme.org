@@ -1,6 +1,5 @@
 * Send messages through Telegram bot
 
-
 ** Example config in .bashrc
    #+begin_src bash
      export TELEGRAM_BOT_TOKEN='the-token'
@@ -8,7 +7,6 @@
      export TELEGRAM_BOT_PROXY=socks5://localhost:9999 # Optional
      source ~/telegram-bot-client/client.sh
    #+end_src
-
 
 ** Example usage
 
