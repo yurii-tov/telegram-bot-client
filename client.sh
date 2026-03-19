@@ -1,7 +1,3 @@
-# Telegram bot interaction
-# Preparation: $ read token ; echo "export TELEGRAM_BOT_TOKEN='$token'" >> ~/.bashrc
-#              $ read chat ; echo "export TELEGRAM_BOT_CHAT='$chat'" >> ~/.bashrc
-
 function send-telegram-message() {
     local message="$1"
     [ $# -lt 1 ] && {
